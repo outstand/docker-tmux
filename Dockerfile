@@ -1,10 +1,10 @@
 # Alpine 3.5 doesn't seem to correctly allocate a tty:
 # https://github.com/gliderlabs/docker-alpine/issues/266
-FROM alpine:3.4
+FROM alpine:3.7
 MAINTAINER Ryan Schlesinger <ryan@outstand.com>
 
 ENV DUMB_INIT_VERSION 1.2.0
-ENV TMUX_VERSION 2.3
+ENV TMUX_VERSION 2.6
 
 RUN addgroup -S mux && \
     adduser -S -G mux mux && \
